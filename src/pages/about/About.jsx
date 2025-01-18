@@ -21,10 +21,10 @@ const About = () => {
             I've already known JS, ReactJS, ReactNative, NodeJS, MongoDB,SQL,
             Java, Hibernate, SpringBoot, AWS Services.
           </h4>
-          <h2>
+          <h3>
             <a href="mailto:Ashley@clarusway.com">Send email</a> :
             Ashley@clarusway.com
-          </h2>
+          </h3>
           {/* whatsapp://tel:3216541234 */}
         </div>
       </div>
