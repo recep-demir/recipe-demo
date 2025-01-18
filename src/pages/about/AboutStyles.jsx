@@ -31,7 +31,7 @@ export const InfoContainer = styled.div`
   margin: 0 10px;
   max-width: 1000px;
   border: 1px solid white;
-  padding: 25px;
+  padding: 20px;
   border-radius: 5px;
   a {
     color: orange;
