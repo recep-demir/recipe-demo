@@ -58,8 +58,8 @@ export const Menu = styled.div`
     flex-direction: column;
 
     width: 100%;
-  /* hamburgere tıklanınca true olan "" sayesinde görün, false olunca görünme */
-    /* display: */
+  /* hamburgere tıklanınca true olan abdullah sayesinde görünür ol, false olunca görünme */
+    display:${({abdullah})=>(abdullah ? "flex": "none")}
   }
 /* export const Mlink=styled.a */
   a {
@@ -94,9 +94,7 @@ export const Logo = styled(MenuLink)`
   /* text-decoration: none; */
   font-weight: 800;
   /* font-size: 2rem; */
-  i {
-    /* font-family: "Girassol", sans-serif; */
-  }
+  
   span {
     /* font-family: "Girassol", sans-serif; */
     font-weight: 400;

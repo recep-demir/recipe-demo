@@ -1,9 +1,28 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import { Hamburger, Logo, Menu, MenuLink, Nav } from './NavbarStyles'
+import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
+const [open, setOpen]=useState(false)
+
+
   return (
-    <div>Navbar</div>
-  )
+    <Nav>
+      <Logo to="/home" onClick={() => setOpen(!open)}>
+        <i> {"Mozzana"}</i>
+        
+      </Logo>
+
+      <Hamburger onClick={() => setOpen(!open)}>
+        <GiHamburgerMenu />
+      </Hamburger>
+
+      <Menu abdullah={open} onClick={() => setOpen(!open)}>
+        <MenuLink to="/about">About</MenuLink>
+        <a href="https://github.com/recep-demir">Github</a>
+        <MenuLink to="/">Logout</MenuLink>
+      </Menu>
+    </Nav>
+  );
 }
 
 export default Navbar
