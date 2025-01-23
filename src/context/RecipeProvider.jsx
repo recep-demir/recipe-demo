@@ -2,8 +2,6 @@ import React, { createContext, useState } from 'react'
 import axios from "axios"
 
 
-//!context alanı aç
-
 export const RecipeContext=createContext()
 
 
@@ -21,19 +19,13 @@ const RecipeProvider = ({children}) => {
 
 const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${mealType}`;
 
-
 const getirData=async()=>{
 
   const {data}=  await axios.get(url)
 // console.log(data.hits);
  setYemekler(data.hits)
 
-
-
 }
-
-console.log(yemekler);
-
 
 
   return (

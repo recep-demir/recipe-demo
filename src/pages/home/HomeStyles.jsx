@@ -13,8 +13,8 @@ export const MainContainer = styled.div`
 
 export const Cards = styled.div`
   /* search den sonra çıkan herbir yiyecek kart RECİPECARD*/
-  height: 300px;
-  background: #e1f1dd;
+  height: 350px;
+  background: #646363;
   padding: 5px;
   border-radius: 3px;
   width: 300px;
@@ -33,25 +33,26 @@ export const Cards = styled.div`
 
 export const RecipeHeader = styled.h1`
   /* kartlardaki yiyeceklerin adları */
-  font-size: 1.5rem;
+  font-size: 20px;
   text-align: center;
 `;
 export const RecipeImage = styled.img`
   /* kartların içindeki resimler RECİPECARD */
-  height: 150px;
+  height: 200px;
   border-radius: 10px;
-  border:2px solid red;
+  border:2px solid ;
 `;
 
 export const Button = styled.button`
   /* view more  buton */
-  background-color: #00adb5;
+  background-color: black;
+  color: white;
   padding: 5px;
   /* outline: none; */
   height: 2rem;
   border: none;
   margin: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 `;
 
@@ -63,12 +64,12 @@ export const ImgDiv = styled.div`
  text-align: center;
   margin: 50px;
   /* background-color: #00adb5; */
-  background-color: coral;
+  /* background-color: coral; */
 `;
 
 export const HomeImg = styled.img`
   /* ana sayfadaki esas resim */
   width: 80%;
   max-width: 750px;
-  background-color:pink;
+  /* background-color:pink; */
 `;
