@@ -6,28 +6,28 @@ const About = () => {
   return (
     <div>
 
-      <div>
-        <img src={codingSvg} alt=""/>
+      <AboutContainer>
+        <StyledImage src={codingSvg} alt=""/>
 
-        <div>
+        <HeaderContainer>
           <h1>
-            About Software Developer <span>AshleyMiller </span>
+            About Software Developer <span>RecepDemir </span>
           </h1>
-        </div>
-        <div>
-          <h2>Hi, I'am Ashley Miller</h2>
+        </HeaderContainer>
+
+        <InfoContainer>
+          <h2>Hi, I'am Recep Demir</h2>
           <h3>I’m currently learning Full-Stack Development Languages.</h3>
           <h4>
-            I've already known JS, ReactJS, ReactNative, NodeJS, MongoDB,SQL,
-            Java, Hibernate, SpringBoot, AWS Services.
+            I've already known JS, ReactJS, ReactNative, NodeJS.
           </h4>
           <h2>
-            <a href="mailto:Ashley@clarusway.com">Send email</a> :
-            Ashley@clarusway.com
+            <a href="mailto:demir.rp@gmail.com">Send email</a> :
+            demir.rp@gmail.com
           </h2>
           {/* whatsapp://tel:3216541234 */}
-        </div>
-      </div>
+        </InfoContainer>
+      </AboutContainer>
     </div>
   );
 }

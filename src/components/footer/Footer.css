@@ -1,21 +1,38 @@
 .footer-div {
-  width: 80vw;
+  width: 98.7vw;
   min-width: 400px;
-  background-color: White;
+  background-color: black;
   height: 50px;
-  font-size: 2rem;
-  color: #9d4d8c;
-  border: 0.5px solid #9d4d8c;
+  color: white;
+  border: 0.5px solid black;
   border-radius: 5px;
-  margin: 50px 40px 40px 60px;
-  /* height: 55px; */
+  height: 55px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  
 }
 
 .brand {
-  color: grey;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: yellow;
+
+
+}
+span{
+  margin-top: 15px;
+  margin-right: 10px;
+  color: yellow;
+}
+
+p{
   font-weight: bold;
   font-style: italic;
-  margin-right: 1.5rem;
+  font-size: 25px;
+  color: yellow;
+  margin-top: 10px;
+  
 }

@@ -18,7 +18,7 @@ const Navbar = () => {
 
       <Menu hidden = {open} onClick={()=>setOpen(!open)} >
         <MenuLink to="/about">About</MenuLink>
-        <a href="https://github.com/recep-demir">Github</a>
+        <a   href="https://github.com/recep-demir" target="_blank" rel="noopener noreferrer">Github</a>
         <MenuLink to="/">Logout</MenuLink>
       </Menu>
     </Nav>

@@ -50,7 +50,7 @@ export const Button = styled.button`
   background-color: black;
   color: white;
 
-  padding: 5px;
+
   /* outline: none; */
   height: 2rem;
   border: none;

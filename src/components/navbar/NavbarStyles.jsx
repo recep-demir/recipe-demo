@@ -13,7 +13,7 @@ export const Nav = styled.div`
   /* Varsayılan olarak esnek öğeler tek bir satıra sığmaya çalışırlar. Gerektiğinde birden fazla satıra yaymak için bu özelliği kullanabilirsiniz */
   background: black;
   border-radius: 0 0 10px 10px;
-  height: 75px;
+  height: 100px;
   font-size: 2rem;
   /* background: #e1f1dd; */
 `;
@@ -68,6 +68,7 @@ export const Menu = styled.div`
   a {
     padding: 1rem 2rem;
     cursor: pointer;
+    
     text-align: center;
     text-decoration: none;
     /* kelimelerin altı çizili olmasın */

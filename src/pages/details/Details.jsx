@@ -9,6 +9,8 @@ import {
 } from "./DetailsStyles";
 import dietsvg from "../../assets/diet.svg";
 import { useLocation, useNavigate } from "react-router-dom";
+
+
 const Details = () => {
  
   return (
