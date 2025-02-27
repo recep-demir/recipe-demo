@@ -9,7 +9,6 @@ const RecipeCard = () => {
   
   const navigate=useNavigate()
 
-
   return (
     <MainContainer>
       {yemekler.map(({recipe}) => (

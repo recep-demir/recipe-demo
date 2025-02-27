@@ -22,15 +22,6 @@ const Home = () => {
   </ImgDiv>
 )}
       
-
-
-
-
-
-
-
-
-
     </div>
   )
 }

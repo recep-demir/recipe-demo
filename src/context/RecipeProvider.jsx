@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import axios from "axios"
 
 
@@ -22,10 +22,14 @@ const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=$
 const getirData=async()=>{
 
   const {data}=  await axios.get(url)
-// console.log(data.hits);
+console.log(data.hits);
  setYemekler(data.hits)
 
 }
+
+useEffect(() => {
+getirData()
+}, [])
 
 
   return (
