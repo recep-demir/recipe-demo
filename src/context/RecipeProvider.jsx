@@ -41,7 +41,7 @@ const RecipeProvider = ({ children }) => {
   };
   useEffect(() => {
     getirData()
-  }, [])
+  }, [getirData])
 
 
 if(error){

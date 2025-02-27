@@ -8,7 +8,7 @@ import {
   OtherPart,
 } from "./DetailsStyles";
 import dietsvg from "../../assets/diet.svg";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const Details = () => {
  
 const{state:{recipe}}=useLocation()

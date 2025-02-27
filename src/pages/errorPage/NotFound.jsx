@@ -11,7 +11,8 @@ const NotFound = () => {
     }, 1000);
 
     if (sayac === 0) clearInterval(zaman);
-  }, []);
+  }, [sayac]);
+
 
   if (sayac === 0) {
     return <Navigate to="/home" />;
