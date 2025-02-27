@@ -1,3 +1,7 @@
+## Login Information
+- **Username:** test
+- **Password:** test
+
 [Live Demo](https://todo-app-ts01.netlify.app/)
 ## Screenshots
 
