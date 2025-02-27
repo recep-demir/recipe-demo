@@ -35,7 +35,7 @@ navigate("/home")
       <FormContainer>
         <StyledImg src={mealSvg} />
 
-        <Header>{"<Clarusway/>"}Recipe</Header>
+        <Header>Recipe</Header>
 
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput

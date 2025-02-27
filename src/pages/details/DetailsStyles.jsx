@@ -1,88 +1,83 @@
 import styled from "styled-components";
 
 export const DetailContainer = styled.div`
-  /* en dış container */
- 
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  
   min-height: calc(100vh - 75px);
-  /* height: fit-content; */
-  padding: 5px;
+  padding: 20px;
+  background-color: #121212;
+  color: #f0f0f0;
 `;
 
 export const DetailPart = styled.div`
-  /* verilerin , içindekiler,resim ve Nutrients in yazdığı yer */
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: 1rem;
-  border: 1px solid white;
-  border-radius: 5px;
- 
-  /* background-color: #e1f1dd; */
-  /* height: calc(100vh - 300px); */
-  @media (max-width: 1250px) {
-    justify-content: center;
-
-    border: 1px solid red;
-  }
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 1200px;
 `;
 
 export const ImgContainer = styled.div`
-  /* resmin div i */
-  background-color: green;
-
-  border: 1px solid #00adb5;
-  padding: 10px;
-  border-radius: 3px;
-  margin: 2rem;
+  border: 2px solid #00adb5;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #222;
   img {
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 100%;
+    height: auto;
   }
 `;
 
 export const HeaderContainer = styled.div`
-  /* üstteki başlık ve kadın resmi */
-  background-color: darkgray;
-
   display: flex;
-  justify-content: space-evenly;
-  margin: 25px;
-  font-size: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: #00adb5;
   }
   img {
-    width: 200px;
+    width: 150px;
+    border-radius: 50%;
   }
 `;
 
 export const IngredContainer = styled.div`
-  /* alttaki bilgiler, içindekiler */
-  width: 400px;
-  font-size: 1.4rem;
-  margin: 2rem;
-  background-color: gray;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.2rem;
+  padding: 15px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 `;
 
 export const OtherPart = styled.div`
-  /* üstteki bilgiler */
-  background-color: lightgray;
-
-  width: 400px;
-  text-align: right;
-  font-size: 1.8rem;
-  margin: 2rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.4rem;
+  padding: 15px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction:column;
-  gap:1rem;
-  /* span{display:block; margin :1rem} */
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
 `;

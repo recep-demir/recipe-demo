@@ -1,77 +1,77 @@
 import styled from "styled-components";
 
 export const LoginContainer = styled.div`
-  /* resmin olduğu div */
-  background-image: url("https://picsum.photos/1600/900");
-  background-repeat: no-repeat;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
   height: 100vh;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border:2px solid red; */
 `;
 
 export const FormContainer = styled.div`
-  /* yuvarlak yer */
-  /* width: 600px; */
-  min-width: 600px;
-  height: 600px;
-  background-color: rgba(0, 173, 181, 0.5);
-  border-radius: 50%;
-  border: 2px solid #e1f1dd;
-  padding: 5px;
+  width: 400px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const Header = styled.h1`
-  /* clarusway başlığı yazan yer */
-  color: white;
-  font-family: "Girassol", sans-serif;
-  font-size: 3rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 `;
 
 export const StyledInput = styled.input`
-  /* username giriş inputları */
-  height: 50px;
-  font-size: 2rem;
-  width: 250px;
-  border-radius: 5px;
-  font-family: "Girassol", sans-serif;
-  /* inuta girilen yazıyı büyük harf yapar */
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 8px;
   border: none;
+  background: rgba(255, 255, 255, 0.2);
   color: white;
-  margin: 1rem;
-  text-indent: 20px;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  
+  &::placeholder {
+    color: white;
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 0.3);
+  }
 `;
 
 export const StyledForm = styled.form`
-  /* 3 kutunun olduğu form */
-  background: pink;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const StyledButton = styled.button`
-
-/* login butonu */
-  font-size: 2rem;
-  font-family: "Girassol", sans-serif;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background: #ff9800;
   color: white;
   border: none;
   cursor: pointer;
-  margin: 1rem;
+  transition: 0.3s;
+  
+  &:hover {
+    background: #e68900;
+  }
 `;
 
 export const StyledImg = styled.img`
-  /* yuvarlağın içindeki üstteki küçük resim */
-
-  width: 150px;
-  margin: 1rem;
+  width: 100px;
+  margin-bottom: 1rem;
 `;
