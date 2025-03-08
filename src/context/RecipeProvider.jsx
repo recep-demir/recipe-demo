@@ -1,18 +1,14 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState, useCallback } from "react";
 import axios from "axios";
 
 //!context alanı aç
-
 export const RecipeContext = createContext();
 
 const APP_ID = "bfbb3efc";
 const APP_KEY = "43faeee790f26cd82b28050d3031619d";
 
-// https://developer.edamam.com/admin/applications
-
 const RecipeProvider = ({ children }) => {
   //! login ve privateRouter için stateler
-
   const [user, setUser] = useState(localStorage.getItem("username") || "");
   const [pass, setPass] = useState(localStorage.getItem("password") || "");
 
@@ -26,32 +22,29 @@ const RecipeProvider = ({ children }) => {
 
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${mealType}`;
 
-  const getirData = async () => {
+  const getirData = useCallback(async () => {
     setLoading(true);
-
     try {
       const { data } = await axios.get(url);
-      // console.log(data.hits);
       setYemekler(data.hits);
     } catch (error) {
       setError(true);
     } finally {
       setLoading(false);
     }
-  };
+  }, [url]);
+
   useEffect(() => {
-    getirData()
-  }, [])
+    getirData();
+  }, [getirData]); // getirData bağımlılığa eklendi
 
+  if (error) {
+    return <p>Herhangi bir hata var...</p>;
+  }
 
-if(error){
-  return <p>Herhangi bir hata var...</p>
-}
-
-if(loading){
-  return <p>loading......</p>
-}
-
+  if (loading) {
+    return <p>loading......</p>;
+  }
 
   return (
     <RecipeContext.Provider
